@@ -1,0 +1,28 @@
+{
+    "name": "ms-python",
+    "build": {
+        "dockerfile": "./Dockerfile"
+    },
+    "init": true,
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit",
+                        "source.organizeImports": "explicit"
+                    },
+                    //"editor.defaultFormatter": "charliermarsh.ruff"
+                }
+            },
+            "extensions": [
+                "ms-python.python",
+                //"charliermarsh.ruff",
+                //"KevinRose.vsc-python-indent",
+                "njpwerner.autodocstring",
+                "VisualStudioExptTeam.vscodeintellicode"
+            ]
+        }
+    }
+}
